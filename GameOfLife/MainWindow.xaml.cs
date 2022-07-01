@@ -71,5 +71,10 @@ namespace GameOfLife
         {
             mainGrid.Clear();
         }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            timer.Tick -= OnTimer;
+        }
     }
 }
