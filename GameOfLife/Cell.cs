@@ -17,7 +17,6 @@ namespace GameOfLife
             PositionY = column * 5;
             Age = age;
             IsAlive = alive;
-
         }
     }
 }
